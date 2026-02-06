@@ -6,6 +6,7 @@ const yesBtn = document.getElementById('yesBtn');
 const mainContainer = document.getElementById('mainContainer');
 const celebrationContainer = document.getElementById('celebrationContainer');
 const celebrationGif = document.getElementById('celebrationGif');
+const questionImage = document.getElementById('questionImage');
 
 let yesSize = 1;
 
@@ -29,4 +30,6 @@ yesBtn.addEventListener('click', () => {
     
     // This line pulls the gif link from your config.js
     celebrationGif.src = config.celebration.gifUrl;
+    // Load the main image from config
+    questionImage.src = config.mainImage;
 });
